@@ -284,6 +284,7 @@ async function run() {
       const decodedEmail = req.decoded.email;
       const query = { email: decodedEmail };
       const user = await usersCollection.findOne(query);
+      // console.log(user);
 
       if (user?.role !== "admin") {
         return res.status(403).send({ message: "Only Admin Can Verify!!" });
