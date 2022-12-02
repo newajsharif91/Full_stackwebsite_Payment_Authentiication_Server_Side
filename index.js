@@ -321,7 +321,7 @@ async function run() {
 
       res.send({ isAdmin: user?.role === "admin" });
     });
-    // verify Seller
+    // verify Seller using name
     app.get("/userSeller/:email", async (req, res) => {
       const email = req.params.email;
       const query = { email: email };
