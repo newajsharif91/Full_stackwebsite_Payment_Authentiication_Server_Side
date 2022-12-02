@@ -230,7 +230,7 @@ async function run() {
       res.send(result);
     });
 
-    //    // STRIPT PAYMENT
+    //Script Payment
     app.post("/create-payment-intent", async (req, res) => {
       const booking = req.body;
       const price = booking.price;
