@@ -342,7 +342,7 @@ async function run() {
         return res.send({ accessToken: token });
       }
 
-      // console.log(user)
+      console.log(user);
       res.status(403).send({ accessToken: "" });
     });
   }
